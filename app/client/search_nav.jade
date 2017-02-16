@@ -1,0 +1,8 @@
+template(name="search_nav")
+	nav.navbar.navbar-default
+		.container-fluid
+			form.navbar-form.navbar-left(role="search")
+				.form-group
+					input.form-control(type="text", placeholder="Search for protocols.." id='search_input')
+					button.btn.btn-default(type="submit", data-action='search')
+						| Submit

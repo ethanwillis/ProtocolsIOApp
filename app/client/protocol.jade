@@ -1,0 +1,18 @@
+template(name="protocol")
+	+if data
+		+each data
+			.row
+				.col-md-10.col-md-offset-1
+					.panel.panel-primary
+						.panel-heading
+							| Protocol Name: {{protocol_name}}
+						.panel-body
+							| Protocol Id: {{protocol_id}}
+							br
+							| Version Class: {{version_class}}
+							br
+							| Activity: {{activity}}
+							br
+							| Is Owner: {{is_owner}}
+							br
+							| Meta: {{meta}}

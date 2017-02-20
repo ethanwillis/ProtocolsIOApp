@@ -4,7 +4,6 @@ PDFJS.workerSrc = 'http://localhost:3008/pdf.worker.min.js';
 Template.pdf.helpers({});
 Template.pdf.onRendered(function() {
 	var protocolid = FlowRouter.getParam('protocol_id');
-	console.log(protocolid);
 	Meteor.call('get_protocol_pdf', protocolid, function(error, result) {
 		if(error) {
 			alert(error);

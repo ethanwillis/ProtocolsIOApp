@@ -7,6 +7,7 @@
   "dependencies": {
     "babel-runtime": "^6.23.0",
     "meteor-node-stubs": "~0.2.0",
-    "protocolsioapi": "0.0.6"
+    "pdfjs-dist": "^1.7.308",
+    "protocolsioapi": "0.0.8"
   }
 }

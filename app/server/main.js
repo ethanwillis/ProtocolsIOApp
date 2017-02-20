@@ -27,6 +27,6 @@ Meteor.methods({
 		this.unblock();
 		var getProtocolPDFSync = Meteor.wrapAsync(protocolsio_client.getProtocolPDF, protocolsio_client);
 		var result = getProtocolPDFSync(protocol_id);
-		return JSON.parse(result);
+		return result;
 	}
 });

@@ -21,7 +21,7 @@ FlowRouter.route('/protocol/:protocol_id', {
 FlowRouter.route('/protocol/:protocol_id/pdf', {
 	name: 'pdf',
 	action: function(param, query_params) {
-		BlazeLayout.render('pdf', {
+		BlazeLayout.render('search_template', {
 			nav: 'search_nav',
 			search_list: 'pdf'
 		});
